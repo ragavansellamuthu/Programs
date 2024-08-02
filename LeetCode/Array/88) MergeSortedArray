@@ -1,4 +1,4 @@
-package programs.array;
+package programs.leetcode.array;
 
 import java.util.Arrays;
 
@@ -24,4 +24,3 @@ public class MergeSortedArray {
 		}
 	}
 }
-
