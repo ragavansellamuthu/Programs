@@ -1,0 +1,25 @@
+package programs.popular.array;
+
+import java.util.Arrays;
+
+public class ChocolateDistribution {
+
+	public static void main(String[] args) {
+		int packets[] = { 3, 4, 1, 9, 56, 7, 9, 12 };
+		int students = 5;
+		System.out.println("Minimum Difference is " + findMinimumDifference(packets, students));
+	}
+
+	private static int findMinimumDifference(int[] packets, int students) {
+		Arrays.sort(packets);
+		int minDif = Integer.MAX_VALUE;
+		for (int i = 0; i <= packets.length - students; i++) {
+			int dif = packets[i + students - 1] - packets[i];
+			if (dif < minDif) {
+				minDif = dif;
+			}
+		}
+		return minDif;
+	}
+
+}
