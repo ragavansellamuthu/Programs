@@ -13,13 +13,11 @@ public class BestTimeToBuyAndSellStock2 {
 	}
 
 	public static int predict(int[] prices) {
-		int buy = prices[0];
 		int profit = 0;
 		for (int i = 1; i < prices.length; i++) {
-			if (prices[i] > buy) {
-				profit += prices[i] - buy;
+			if (prices[i] > prices[i-1]) {
+				profit += prices[i] - prices[i-1];
 			}
-			buy = prices[i];
 		}
 		return profit;
 	}
