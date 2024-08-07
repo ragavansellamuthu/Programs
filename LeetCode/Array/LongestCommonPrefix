@@ -1,0 +1,31 @@
+package programs.leetcode.string;
+
+public class LongestCommonPrefix {
+
+	public static void main(String[] args) {
+		String[] words = { "flower", "flow", "flight" };
+		System.out.println("Longest Common Prefix : " + find(words));
+	}
+
+	private static String find(String[] words) {
+		StringBuilder prefix = new StringBuilder("");
+		int min = Integer.MAX_VALUE;
+		for (String word : words) {
+			min = Math.min(min, word.length());
+		}
+		for (int i = 0; i < min; i++) {
+			char ch = words[0].charAt(i);
+			boolean result = true ; 
+			for( int j=1 ; j<words.length; j++) {
+				result = result && words[j].charAt(i)==ch;
+			}
+			if(result) {
+				prefix.append(ch);
+			} else {
+				return prefix.toString();
+			}
+		}
+		return prefix.toString();
+	}
+	
+}
