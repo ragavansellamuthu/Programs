@@ -13,10 +13,10 @@ public class FirstOccurrenceIndex {
 		int m = haystack.length();
 		int n = needle.length();
 		if (m >= n) {
-			for (int i = 0; i <= m-n; i++) {
+			for (int i = 0; i <= m - n; i++) {
 				if (haystack.charAt(i) == needle.charAt(0) && haystack.substring(i, i + n).equals(needle)) {
-                    return i;
-                }
+					return i;
+				}
 			}
 		}
 		return -1;
