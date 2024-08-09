@@ -12,4 +12,5 @@ Tips :
 10) Use multiple pointers to optimize iterations and avoid unnecessary nested loops.
 11) Analyze edge cases, considering scenarios like empty inputs.
 12) Test with different inputs.
+13) Always look for specific details in problem statements, as they can often hint at edge cases or ideas for optimization.
     
