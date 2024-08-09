@@ -14,4 +14,5 @@ Tips :
 12) Test with different inputs.
 13) Always look for specific details in problem statements, as they can often hint at edge cases or ideas for optimization.
 14) Ensure that the solution meets the problem constraints.
+15) If asked for the number of solutions, focus on calculating the count rather than listing each solution.
     
