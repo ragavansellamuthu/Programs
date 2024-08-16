@@ -15,7 +15,6 @@ public class SquareRoot {
 		int right = x;
 		int result = 0;
 		while (left <= right) {
-			//int mid = (left + right) / 2;
 			int mid = left + (right-left) / 2;
 			if (mid<= x/mid ) {
 				result = mid;
@@ -30,7 +29,8 @@ public class SquareRoot {
 
 }
 
+// To prevent overflow : Use Equivalents
 
-// Why not mid = (left+right)/2 and mid*mid <= x : Overflow
-
+// y^2 <= x is same as y <= x/y
+// (x+y)/2 = (2x-x+y)/2 = 2x/2 + (y-x)/2 = x - (x-y)/2 
 
