@@ -17,4 +17,5 @@ Tips :
 15) If asked for the number of solutions, focus on calculating the count rather than finding all solutions.
 16) If possible, try to avoid using an extra counter variable.
 17) Declaring the temporary variable outside the loop reduces memory allocation overhead and improves performance by reusing the variable across iterations.
+18) Non-Decreasing Order : Ascending Order with duplicates ; Non-Increasing Order : Descending Order with duplicates.
     
