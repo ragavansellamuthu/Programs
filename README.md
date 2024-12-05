@@ -18,4 +18,5 @@ Tips :
 16) If possible, try to avoid using an extra counter variable.
 17) Declaring the temporary variable outside the loop reduces memory allocation overhead and improves performance by reusing the variable across iterations.
 18) Non-Decreasing Order : Ascending Order with duplicates ; Non-Increasing Order : Descending Order with duplicates.
+19) Identify patterns to avoid redundant calculations.
     
